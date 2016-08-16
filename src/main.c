@@ -6,21 +6,21 @@ int main (int argc, char* argv[])
 {
 	for (int i = 1 ; i <= 100 ; i++)
 	{
-		bool m = false;
+		bool matched = false;
 
 		if (i % 3 == 0)
 		{
 			printf("Fizz");
-			m = true;
+			matched = true;
 		}
 
 		if (i % 5 == 0)
 		{
 			printf("Buzz");
-			m = true;
+			matched = true;
 		}
 
-		if (!m)
+		if (!matched)
 		{
 			printf("%d", i);
 		}
